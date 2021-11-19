@@ -12,6 +12,7 @@
             width: 100vw;
             height: 100%;
             margin: 0px;
+            
         }
         
         section{
@@ -61,9 +62,9 @@
 }
 .foto {
   background-image: url(images/max.jpg);
-  margin-top: 13vw;
-  margin-left: 5em;
+  margin-top: 15em;
   background-color: darkorange;
+  
 }
 
 .hexTop,
@@ -125,11 +126,6 @@
 }
 .topo{
     display: flex;
-    grid-template-columns: 1fr, 1fr;
-    grid-template-areas: 
-    "title ball"
-    "sub ball"
-    ;
     margin-bottom: 20vh;
 
 }
@@ -147,25 +143,14 @@
     font-weight: 200;
     font-size: 1.5em;
     color: rgb(245, 194, 132);
-    margin-left: 7em;
     width: 20em;
-    grid-area: sub;
-    margin-top: 25vh;
+    
+    margin: 20vh 10vw;
     text-align: justify;
     text-justify:auto;
     
 }
-.imagemcasa{
-    margin-top: 10vw;
-    margin-left: 5em;
-    background-color: darkorange;
-    height: 300px;
-    width: 300px;
-    background-image: url(images/max.jpg);
-    background-size: contain;
-    border-radius: 50%;
-    grid-area: ball;
-}
+
 .header{
     width:100%;
     height:1em;
@@ -227,3 +212,18 @@
     visibility: visible;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.hexagon:hover .hexBottom,.hexagon:hover .hexTop, .hexagon:hover{
+  box-shadow: 1px 1px 2px darkorange, 0 0 1em darkorange, 0 0 0.2em darkorange; 
+}
+
+
+@media (max-width:40em) {
+  .hexgap{
+    display: grid;
+    align-items: center;
+    justify-content: center;}
+    
+
+}
+
