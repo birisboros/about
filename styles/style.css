@@ -218,12 +218,14 @@
 }
 
 
-@media (max-width:420px) {
+@media (max-width:450px) {
   .hexgap{
     display: grid;
     align-items: center;
     justify-content: center;}
     
-
+   .subtitle{
+      font-size: 1em;
+    }
 }
 
