@@ -144,6 +144,8 @@
     width: 20em;
     grid-area: sub;
     margin-top: 25vh;
+    text-align: justify;
+    text-justify:auto;
     
 }
 .imagemcasa{
