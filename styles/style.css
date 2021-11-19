@@ -1,0 +1,221 @@
+   
+    body {
+            font-family: 'Monoton', cursive;
+            background-image: url('images/cogus001.webp');
+            background-color: rgb(30, 16, 92);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            width: 100vw;
+            height: 100%;
+        }
+        
+        section{
+            
+            margin-bottom: -4em;
+         
+        }
+        .hexgap{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5em;
+            width: 100vw;
+            height: 100%;
+        }
+    
+    .hexagon {
+  position: relative;
+  width: 300px; 
+  height: 173.21px;
+  margin: 86.60px 0;
+  background-image: url(http://csshexagon.com/img/meow.jpg);
+  background-size: auto 346.4102px;
+  background-position: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.666);
+}
+.um {
+    background-image: url(images/whats.jpg);
+}
+.dois {
+    background-image: url(images/gmail.jpg);
+}
+.tres {
+    background-image: url(images/github.png);
+}
+.quatro {
+    background-image: url(images/linkedin.jpeg);
+}
+.cinco {
+    background-image: url(images/cogus001.webp);
+}
+.seis {
+    background-image: url(images/codepen.png);
+}
+.sete {
+    background-image: url(images/cogus001.webp);
+}
+
+.hexTop,
+.hexBottom {
+  position: absolute;
+  z-index: 1;
+  width: 212.13px;
+  height: 212.13px;
+  overflow: hidden;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background: inherit;
+  left: 43.93px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.666);
+}
+
+/*counter transform the bg image on the caps, thanks to Brenna from github*/
+.hexTop:after,
+.hexBottom:after {
+  content: "";
+  position: absolute;
+  width: 300.0000px;
+  height: 173.20508075688775px;
+  -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
+  -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
+  transform:          rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  background: inherit;
+}
+
+.hexTop {
+  top: -106.0660px;
+}
+
+.hexTop:after {
+  background-position: center top;
+}
+
+.hexBottom {
+  bottom: -106.0660px;
+}
+
+.hexBottom:after {
+  background-position: center bottom;
+}
+
+.hexagon:after {
+  content: "";
+  position: absolute;
+  top: 0.0000px;
+  left: 0;
+  width: 300.0000px;
+  height: 173.2051px;
+  z-index: 2;
+  background: inherit;
+}
+.topo{
+    display: flex;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-areas: 
+    "title ball"
+    "sub ball"
+    ;
+    margin-bottom: 20vh;
+
+}
+.title{
+    font-size: 5em;
+    color: darkorange;
+    text-shadow: 1px 1px 2px darkorange, 0 0 1em darkorange, 0 0 0.2em darkorange;;
+    margin-top: 20vh;
+    margin-left: 1em;
+    grid-area: title;
+    
+}
+.subtitle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 1.5em;
+    color: rgb(245, 194, 132);
+    margin-left: 7em;
+    width: 20em;
+    grid-area: sub;
+    margin-top: 25vh;
+    
+}
+.imagemcasa{
+    margin-top: 10vw;
+    margin-left: 5em;
+    background-color: darkorange;
+    height: 300px;
+    width: 300px;
+    background-image: url(images/max.jpg);
+    background-size: contain;
+    border-radius: 50%;
+    grid-area: ball;
+}
+.header{
+    width:100%;
+    height:1em;
+    
+    position:sticky;
+    top:0;
+    background-color: rgba(0, 0, 0, 0.637);
+    display: flex;
+    justify-content: center;
+}
+.linked{
+    font-family: Arial;
+    font-weight: 100;
+    text-decoration: none;
+    color:white;
+    font-size: .8em;
+    margin-right: 4em;
+}
+.linked:hover{
+    color:darkorange; 
+}
+.texfot{
+    margin-top: 15vh;
+    font-family: Arial;
+    font-weight: 100;
+    color:white;
+    font-size: .8em;
+    width:100%;
+    height:1em;
+    background-color: rgba(0, 0, 0, 0.637);
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 9;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    font-family: Arial, Helvetica, sans-serif;
+}
