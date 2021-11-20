@@ -132,7 +132,7 @@
 .title{
     font-size: 5em;
     color: darkorange;
-    text-shadow: 1px 1px 2px darkorange, 0 0 1em darkorange, 0 0 0.2em darkorange;
+    text-shadow: 1px 1px 2px darkorange, 0 0 1em darkorange, 0 0 0.2em darkorange;;
     margin-top: 20vh;
     margin-left: 1em;
     grid-area: title;
@@ -218,14 +218,16 @@
   box-shadow: 1px 1px 2px darkorange, 0 0 1em darkorange, 0 0 0.2em darkorange; 
 }
 
-
-@media (max-width:450px) {
+.foto:hover {
+  background-image: url(images/ma2x.jpg);
+}
+@media (max-width:500px) {
   .hexgap{
     display: grid;
     align-items: center;
     justify-content: center;}
     
-   .subtitle{
+    .subtitle{
       font-size: 1em;
       width: 100vw;
     }
